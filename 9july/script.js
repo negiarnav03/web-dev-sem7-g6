@@ -52,30 +52,47 @@
 // event capturing and bubling? top to bottom and bottom to top.
 // if we use true the event will capture else bubble by default,
 
-const grandParent = document.getElementById("grandparent");
-const parent = document.getElementById("parent"); 
-const child = document.getElementById("child");
+// const grandParent = document.getElementById("grandparent");
+// const parent = document.getElementById("parent"); 
+// const child = document.getElementById("child");
+
+
+// // grandParent.addEventListener('click', ()=>{
+// //     console.log("RED div ")
+// // },true)
 
 
 // grandParent.addEventListener('click', ()=>{
 //     console.log("RED div ")
-// },true)
+// })
+
+// parent.addEventListener('click', ()=>{
+//     console.log("green div")
+// })
 
 
-grandParent.addEventListener('click', ()=>{
-    console.log("RED div ")
-})
-
-parent.addEventListener('click', ()=>{
-    console.log("green div")
-})
-
-
-child.addEventListener('click', ()=>{
-    console.log("blue div ")
-})
+// child.addEventListener('click', ()=>{
+//     console.log("blue div ")
+// })
 
 
 
+// EVENT DELIGATION: reduce no. of event listeners to handle nested events.
+
+const unorderedList = document.getElementById("navbar");
+
+
+unorderedList.addEventListener('click',(event)=>{
+    if (event.target.tagName==="LI"){
+        console.log(event.target.textContent);
+    }
+});
+
+
+// let's add new item
+
+const newElement = document.createElement("li");
+newElement.innerText = "Navbar";
+unorderedList.appendChild(newElement);
 
 
