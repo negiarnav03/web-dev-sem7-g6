@@ -8,15 +8,31 @@
 console.log("SCRIPT START");
 
 
-const searchinput = document.getElementById("searchInput");
+// const searchinput = document.getElementById("searchInput");
 
-searchinput.addEventListener("input",(event)=>{
-    console.log("INPUT WORD: ",event.target.value);
-})
+// searchinput.addEventListener("input",(event)=>{
+//     console.log("INPUT WORD: ",event.target.value);
+// })
 
 
 
 // SetTimeOut & SetInterval ?
+
+
+console.log("SCRIPT START");
+
+const searchinput = document.getElementById("searchInput");
+
+searchinput.addEventListener("input",(event)=>{
+    clearTimeout(timeout);
+    timeout = setTimeout(()=>{
+        console.log("INPUT WORD: ",event.target.value)
+    },2000);   
+})
+
+
+
+// data hiding and encapsulation
 
 
 
