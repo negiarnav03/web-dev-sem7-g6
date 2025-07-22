@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Platform | All Blogs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">Blog Platform</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blogs.html" aria-current="page">Blogs</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="blog-layout">
+    <aside class="blog-filters">
+      <h3>Filter Blogs</h3>
+      <input type="text" id="search-input" placeholder="Search by keyword...">
+      <select id="author-filter">
+        <option value="">All Authors</option>
+      </select>
+      <select id="category-filter">
+        <option value="">All Categories</option>
+        <option value="Food">Food</option>
+        <option value="Travel">Travel</option>
+        <option value="Tech">Tech</option>
+        <option value="Lifestyle">Lifestyle</option>
+        <option value="Music">Music</option>
+      </select>
+      <select id="sort-by">
+        <option value="date-desc">Newest First</option>
+        <option value="date-asc">Oldest First</option>
+      </select>
+    </aside>
+
+    <section id="blogs-container" class="blogs-container">
+      <!-- Blog cards will be inserted here by JavaScript -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2023 Blog Platform. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
