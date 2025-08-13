@@ -1,0 +1,27 @@
+{
+  "name": "g4-npm-package",
+  "version": "1.1.1",
+  "description": "This is the First NPM PACKAGE of G4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratiyushray/G4_WEB_DEV.git"
+  },
+  "keywords": [
+    "calculate",
+    "sum",
+    "add"
+  ],
+  "author": "Pratiyush Ray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratiyushray/G4_WEB_DEV/issues"
+  },
+  "homepage": "https://github.com/pratiyushray/G4_WEB_DEV#readme",
+  "dependencies": {
+    "@changesets/cli": "^2.29.5"
+  }
+}
