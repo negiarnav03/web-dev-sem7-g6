@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title> THIS IS HOME PAGE</title>
+    </head>
+
+    <body>
+        {{>navbar}}
+        <h1> THIS IS HOME BODY</h1>
+        <h2>COMPANY NAME: {{companyName}}</h2>
+        <h2>COMPANY FOUNDER: {{founder}}</h2>
+
+
+        <form action="/profile" method="post" enctype="multipart/form-data">
+        <input type="file" name="avatar" />
+        <button type="submit">submit</button>
+</form>
+
+
+    </body> 
+    {{>footer}}
+</html>
